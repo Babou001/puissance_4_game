@@ -15,10 +15,11 @@ public class Grille {
     }
 
 
-    public void setCelluleByIndex(int ligne , int colonne, project.Jeton jeton){
+    public void setCelluleByIndex(int ligne , int colonne, Jeton jeton){
         Cellule cellule = this.plateau[ligne][colonne];
         cellule.set_jeton(jeton);
-
     }
+
+
 
 }

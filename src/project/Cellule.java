@@ -1,15 +1,28 @@
 package src.project;
 
-import project.Jeton;
 
 public class Cellule {
-    private project.Jeton jeton;
+    private Jeton jeton = null;
 
     public Cellule(Jeton jeton) {
         this.jeton = jeton;
     }
 
     public boolean estVide(){
+
+        if (this.jeton == null)
+            return true;
+        else
+            return false;
+
+    }
+
+    public void set_jeton(Jeton jeton){
+        this.jeton = jeton;
+    }
+
+    public String afficherJeton(){
+        return this.jeton == null ? " " : this.jeton.toString();
 
     }
 }
