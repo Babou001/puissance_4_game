@@ -6,7 +6,16 @@ public class Grille {
     private Cellule[][] plateau = new Cellule[ligne][colonnes];
 
     public void afficherGrille(){
+    	   String tableau_str = "";
 
+    	    for (int colonne = 0; colonne < this.colonnes; colonne++) {
+    	        for (int ligne = 0; ligne < this.ligne; ligne++) {
+    	            tableau_str += this.plateau[colonne][ligne].afficherJeton();
+    	            if (ligne == this.ligne - 1)
+    	                tableau_str += '\n';
+    	        }
+    	    }
+    	    System.out.println(tableau_str);
     }
 
 
