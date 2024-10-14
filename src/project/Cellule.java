@@ -22,7 +22,13 @@ public class Cellule {
     }
 
     public String afficherJeton(){
-        return this.jeton == null ? " " : this.jeton.toString();
-
+    	if(this.jeton == Jeton.X) {
+    		return "X";
+    	} else if (this.jeton == Jeton.O){
+    		return "O";
+    	}else {
+    		return " ";
+    		
+    	}
     }
 }
