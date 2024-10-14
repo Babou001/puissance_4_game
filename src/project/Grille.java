@@ -1,9 +1,9 @@
-package src.project;
+package project;
 
 public class Grille {
-    public int ligne = 6;
-    public int colonnes = 7;
-    private Cellule[][] plateau;
+    public static final int ligne = 6;
+    public static final int colonnes = 7;
+    private Cellule[][] plateau = new Cellule[ligne][colonnes];
 
     public void afficherGrille(){
 
@@ -19,6 +19,12 @@ public class Grille {
         Cellule cellule = this.plateau[ligne][colonne];
         cellule.set_jeton(jeton);
     }
+
+
+	public boolean estRemplie() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 
 
