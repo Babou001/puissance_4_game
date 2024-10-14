@@ -15,7 +15,7 @@ public class Grille {
     	                tableau_str += '\n';
     	        }
     	    }
-    	    System.out.println(tableau_str);
+    	    System.out.println(tableau_str); 
     }
 
 
