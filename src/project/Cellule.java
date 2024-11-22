@@ -1,6 +1,5 @@
 package project;
 
-
 public class Cellule {
     private Jeton jeton = null;
 
@@ -8,27 +7,21 @@ public class Cellule {
         this.jeton = jeton;
     }
 
-    public boolean estVide(){
-
-        if (this.jeton == null)
-            return true;
-        else
-            return false;
-
+    public boolean estVide() {
+        return this.jeton == null;
     }
 
-    public void set_jeton(Jeton jeton){
+    public void setJeton(Jeton jeton) {
         this.jeton = jeton;
     }
 
-    public String afficherJeton(){
-    	if(this.jeton == Jeton.X) {
-    		return "X";
-    	} else if (this.jeton == Jeton.O){
-    		return "O";
-    	}else {
-    		return " ";
-    		
-    	}
+    public Jeton getJeton() {
+        return this.jeton;
     }
+
+    public String afficherJeton() {
+        return (this.jeton == Jeton.X) ? "X" : (this.jeton == Jeton.O) ? "O" : " ";
+    }
+
+    
 }
